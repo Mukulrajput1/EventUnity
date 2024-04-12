@@ -32,10 +32,10 @@ function Login({ params: { slug } }: any) {
       <div className="w-[65%] h-[70vh] bg-white flex  shadow-2xl shadow-gray-700">
         <div className={`w-1/2 h-full bg-red-400 flex flex-col justify-center items-center space-y-3 ${isToggleBox ? "ml-[50%]" : "ml-0"} transition-all ease-in-out duration-500 z-20`}>
           <div className="text-white text-3xl font-bold flex justify-center">
-            <span>Welcome to Login</span>
+            <span>Welcome to {isToggleBox?"Sign Up":"Login"}</span>
           </div>
           <div className="flex flex-col space-y-1 items-center">
-            <span className="text-sm text-white ">{isToggleBox ? "Already have an Account!" : "Don't have an Account ?"}</span>
+            <span className="text-sm text-white ">{isToggleBox ? "Already have an Account ?" : "Don't have an Account ?"}</span>
             <button className="text-center w-28 py-2 rounded-full font-bold text-white uppercase border-[2px] mt-5 hover:bg-white hover:text-red-400 transition-all" onClick={toggleButton}>{isToggleBox ? "Sign In" : "Sign Up"}</button>
 
           </div>
