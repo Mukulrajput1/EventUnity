@@ -20,7 +20,7 @@ export const sendEmail = async ({email,emailType, userId}:any)=>{
           secure:false,
           auth: {
             user: "admin@mukultech.online",
-            pass: "SUM5555@"
+            pass: process.env.MAIL_PASS
           }
         });
           const mailOptions = {
