@@ -2,7 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  background: -webkit-linear-gradient(#f093da,#eb88d3,#f5a0e1,#90099a, #90099a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.top {
+  animation-name: example;
+  animation: example 15s infinite ease-in-out;
+}
+
+@keyframes example {
+  0% {
+    transform: translateX(0%);
+  }
+
+  16% {
+
+    transform: translateX(-33.33%);
+  }
+
+  33% {
+
+    transform: translateX(-33.33%);
+  }
+
+  50% {
+    transform: translateX(-66.66%);
+  }
+
+  66% {
+    transform: translateX(-66.66%);
+  }
+
+  84% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(0%);
+
+
+  }
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,9 +61,9 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +71,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
-@layer utilities {
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
